@@ -117,7 +117,7 @@ html {
 body {
   font-family: "Nunito", sans-serif;
   font-size: 62.5%;
-  background: #5C038C;
+  background: #9370db;
 }
 
 .open {
@@ -760,6 +760,73 @@ a {
     width: 40%;
   }
 }
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  color: transparent;
+}
+
+.image-blur {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+.img-text-wrapper:hover .subtitle {
+  color: lightseagreen;
+  font-weight: 600;
+}
+
+.logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+  width: 100%;
+}
+
+.profile-content-wrapper {
+  padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+  color: lightseagreen;
+}
+
 .container {
   display: block;
   width: 100%;
@@ -827,142 +894,7 @@ header {
   margin: auto;
 }
 
-.about-me {
-  display: grid;
-  display: -ms-grid;
-  display: -moz-grid;
-  padding: 5rem 2rem;
-  background: #000C66;
-  width: 100%;
-}
-.about-me_left {
-  margin: auto;
-  text-align: center;
-}
-.about-me_right {
-  margin: auto;
-  padding-top: 2rem;
-  text-align: center;
-}
-.about-me_right span {
-  font-weight: bold;
-}
-
-.projects {
-  padding: 2rem 1.2rem;
-}
-.projects-title {
-  margin: 1rem auto;
-  text-align: center;
-}
-.projects-content {
+.portfolio {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-.work-experience {
-  padding: 2rem 1.2rem;
-}
-.work-experience h2 {
-  text-align: center;
-}
-.work-experience .card .card-body {
-  font-size: 1rem;
-}
-.work-experience .card .card-body li {
-  font-size: 0.9rem;
-}
-
-.qualifications {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  text-align: center;
-  padding: 10rem 1.5rem;
-  background: #8a2be2;
-}
-.qualifications .section-title {
-  margin: 0 auto;
-}
-.qualifications #accordion {
-  padding-top: 1rem;
-}
-
-.contact-me {
-  display: grid;
-  display: -ms-grid;
-  display: -moz-grid;
-  grid-template-columns: 1fr;
-  padding: 2rem;
-}
-.contact-me .card {
-  width: 100%;
-  order: 1;
-}
-.contact-me form {
-  order: 2;
-  margin-top: 1.3rem;
-}
-
-@media (min-width: 898px) {
-  .logo {
-    padding: 4rem 0;
-  }
-  .logo img {
-    margin: 5.5rem auto;
-  }
-
-  .about-me {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .about-me_left {
-    margin: auto;
-  }
-  .about-me_right {
-    margin: auto;
-  }
-
-  .projects {
-    margin: auto;
-    text-align: center;
-  }
-  .projects-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .work-experience .section-title {
-    margin: 0 auto;
-    padding: 2rem 0;
-  }
-  .work-experience .card {
-    width: 75%;
-  }
-
-  .contact-me {
-    gap: 2rem;
-  }
-  .contact-me .card {
-    grid-column: 2/3;
-    width: 80%;
-    order: 2;
-  }
-  .contact-me form {
-    grid-column: 1/2;
-    margin-top: 1.3rem;
-    width: 80%;
-    order: 1;
-  }
-}
-@media (min-width: 1024px) {
-  .projects-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .contact-me {
-    display: flex;
-    flex-direction: row;
-  }
 }/*# sourceMappingURL=main.css.map */
