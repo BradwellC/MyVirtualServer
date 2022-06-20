@@ -290,7 +290,7 @@ a {
 .navbar-brand {
   font-size: 1.3rem;
   margin-left: 1rem;
-  color: #8a2be2;
+  color: #2998ff;
   font-weight: bolder;
 }
 .navbar-img {
@@ -850,7 +850,7 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 4rem;
-  background: #050A30;
+  background-color: #9370db;
 }
 
 .main-footer {
@@ -887,7 +887,7 @@ header {
   }
 }
 .logo {
-  padding: 15rem 0;
+  padding: 4rem 0 5rem;
 }
 .logo img {
   width: 650px;
@@ -897,4 +897,5 @@ header {
 .portfolio {
   display: grid;
   grid-template-columns: 1fr;
+  background-color: #fff;
 }/*# sourceMappingURL=main.css.map */

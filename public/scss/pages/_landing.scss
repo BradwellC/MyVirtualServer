@@ -1,6 +1,6 @@
 .logo {
 
-    padding: 15rem 0;
+    padding: 4rem 0 5rem;
 
     & img {
         width: 650px;
@@ -11,4 +11,6 @@
 .portfolio {
     display: grid;
     grid-template-columns: 1fr;
+
+    background-color: $light;
 }
